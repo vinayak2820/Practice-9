@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+        }
+        .Flexbox{
+            display: flex;
+            flex-direction: column;
+        }
+        .Flexbox-1{
+            display: flex;
+            flex-direction: column;
+        }
+        .Flexbox-2{
+            display: flex;
+            width: 100vw;
+        }
+        .header{
+            background-color: #18b38e;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        a,.link{
+            color: white;
+            padding:10px;
+            text-decoration: none;     
+            background-color: black;       
+        }
+
+        .left_section{
+            background-color:#eeeeed ;
+            padding: 10px;
+            width:20vw;
+        }
+        .right_section{
+            padding: 10px;
+            width:78vw;
+        }
+
+        h2{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        h4 , p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 1.3px;
+        }
+        
+        .image{
+            background-color: gray;
+            padding: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .padd{
+            padding-bottom:50px;
+        }
+        .footer{
+            background-color: #9f9f9e;
+            text-align: center;
+        }
+
+            @media screen and  (max-width:700px) {
+                .Flexbox-2{
+                    display: block;
+                }
+                .left_section{           
+                        width:100vw;
+                    }
+                    .right_section{
+                    
+                        width:100vw;
+                    }
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="Flexbox">
+        <div class="Flexbox-1">
+            <div class="header">
+                <h1>My Website</h1>
+                <p>with a <strong>Flexible</strong> layout</p>
+            </div>
+            <div class="link">
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </div>
+        </div>
+
+        <div class="Flexbox-2">
+            <div class="left_section"> 
+                <h2>About Me</h2>
+                <h4>photo of me:</h4>
+    
+                <div class="image">
+                    <p class="padd">image </p>
+                </div>
+    
+                <p>some text about me in Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, excepturi!</p>
+                <h3>More text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+    
+                <div class="image">
+                    <p>image</p>
+                </div>
+    
+                <div class="image">
+                    <p>image</p>
+                </div>
+    
+                <div class="image">
+                    <p>image</p>
+                </div>
+            </div>
+            <div class="right_section">
+                <div>
+                    <h2>Title Heading</h2>
+                    <h4>Title description, Dec 7,2017</h4>
+        
+                    <div class="image">
+                        <p class="padd">image </p>
+                    </div>
+        
+                    <p>Some text</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum non at illo animi unde reiciendis perferendis sed corrupti quaerat.</p>
+                </div>
+                <div>
+                    
+                <h2>Title Heading</h2>
+                <p><strong>Title description, Dec 7,2017</strong></p>
+    
+                <div class="image">
+                    <p class="padd">image </p>
+                </div>
+    
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum non at illo animi unde reiciendis perferendis sed corrupti quaerat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>
